@@ -2,7 +2,7 @@ const initBg = (autoplay = true) => {
     const bgImgsNames = ['bg_3.jpg', 'bg_2.jpg', 'bg_1.jpg'];
     const bgImgs = bgImgsNames.map(img => "img/" + img);
 
-    $.backstretch(bgImgs, {duration: 5000, fade: 700});
+    $.backstretch(bgImgs, {duration: 5000, fade: 1000});
 
     if(!autoplay) {
       $.backstretch('pause');  
@@ -15,7 +15,7 @@ const setBg = id => {
 
 const setBgOverlay = () => {
     const windowWidth = window.innerWidth;
-    const bgHeight = $('body').height();
+    const bgHeight = $('body').height()*2;
     const tmBgLeft = $('.tm-bg-left');
 
     $('.tm-bg').height(bgHeight);
