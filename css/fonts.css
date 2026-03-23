@@ -1,7 +1,7 @@
 /*
 
 Daniel Goller, Ph.D.
-07.04.2025
+23.03.2026
 
 */
 
@@ -172,6 +172,23 @@ hr { border-top: 1px solid white; }
 .btn-primary:hover {
     background-color: #9CC;
     color: black;
+}
+
+.btn-cv {
+    background-color: #9CC;
+    color: #1f2a30;
+    border: 1px solid #9CC;
+    font-weight: 400;
+    padding: 10px 28px;
+    display: inline-block;
+}
+
+.btn-cv:hover,
+.btn-cv:focus {
+    background-color: white;
+    color: #1f2a30;
+    border-color: white;
+    box-shadow: none;
 }
 
 .tm-site-footer {
